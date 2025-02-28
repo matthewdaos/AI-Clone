@@ -10,34 +10,16 @@ const Main = () => {
   return (
     <div className='main'>
         <div className="nav">
-            <p>Gemini</p>
-            <img src={assets.user_icon} alt="" />
+            <p>Lanmad</p>
+            <img src={assets.axel} alt="" />
         </div>
         <div className="main-container">
 
             {!showResult
             ?<>
                 <div className="greet">
-                    <p><span>Hello, Daddy</span></p>
+                    <p><span>Hello, User</span></p>
                     <p>How can I help you today?</p>
-                </div>
-                <div className="cards">
-                    <div className="card">
-                        <p>Axel oh my</p>
-                        <img src={assets.compass_icon} alt="" />
-                    </div>
-                    <div className="card">
-                        <p>Fill me up</p>
-                        <img src={assets.bulb_icon} alt="" />
-                    </div>
-                    <div className="card">
-                        <p>You suck at Marvel Rivals</p>
-                        <img src={assets.message_icon} alt="" />
-                    </div>
-                    <div className="card">
-                        <p>I'm edging to you</p>
-                        <img src={assets.code_icon} alt="" />
-                    </div>
                 </div>
             </>
             :<div className='result'>
@@ -63,13 +45,11 @@ const Main = () => {
                 <div className="search-box">
                     <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
                     <div>
-                        <img src={assets.gallery_icon} alt="" />
-                        <img src={assets.mic_icon} alt="" />
                         {input?<img onClick={()=>onSent()} src={assets.send_icon} alt="" />:null}
                     </div>
                 </div>
                 <p className="bottom-info">
-                    Axel gonna make me blow
+                    
                 </p>
             </div>
         </div>
